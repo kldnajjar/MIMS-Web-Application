@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+      <title>Signin Page - Wrapkit Admin Template</title>
+      <!-- favicon.ico and apple-touch-icon.png -->
+      <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+      <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="images/favicons/manifest.json">
+      <meta name="msapplication-TileColor" content="#2d89ef">
+      <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="styles/bootstrap.css">
+      <link rel="stylesheet" href="styles/dependencies.css">
+      <link rel="stylesheet" href="styles/wrapkit.css">
+      <link rel="stylesheet" href="styles/pages.css">
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="styles/styles-media.css">
+   </head>
+   <body class="login">
+      <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <main class="signin-wrapper">
+         <div class="tab-content">
+            <p class="text-center p-4x">
+               <img src="images/custom-images/site-login-logo.png" alt="" height="71px">
+            </p>
+            <div class="tab-pane fade in active" id="signin">
+               <form id="signinForm" action="index.html" role="form">
+                  <p class="login-header">SIGN INTO MIMS</p>
+                  <div class="form-group">
+                     <div class="input-group input-group-in mb-2x">
+                        <span class="input-group-addon"><i class="icon-user"></i></span>
+                        <input name="username" id="username" class="form-control" placeholder="Username">
+                     </div>
+                  </div>
+                  <!-- /.form-group -->
+                  <div class="form-group">
+                     <div class="input-group input-group-in mb-2x">
+                        <span class="input-group-addon"><i class="icon-lock"></i></span>
+                        <input type="password" name="passwd" id="passwd" class="form-control" placeholder="Password">
+                     </div>
+                  </div>
+                  <!-- /.form-group -->
+                  <div class="form-group clearfix">
+                     <div class="animated-hue pull-left">
+                        <button id="btnSignin" type="submit" class="btn btn-primary">SIGN IN</button>
+                     </div>
+                     <p class="pull-right"><a href="#recoverAccount" data-toggle="modal">Can't Sign In?</a></p>
+                  </div>
+                  <!-- /.form-group -->
+               </form>
+               <!-- /#signinForm -->
+            </div>
+            <!-- /.tab-pane -->
+         </div>
+         <!-- /.tab-content -->
+         <p class="slogin">Magic is something <span class="red-color">you make</span></p>
+      </main>
+      <!--/#wrapper-->
+      <div class="signin-cr text-light">
+         <ul>
+            <li>
+               <a href="#">
+               Home
+               </a>
+            </li>
+            <li>
+               <a href="#">
+               Support
+               </a>
+            </li>
+            <li>
+               <a href="#">
+               Security
+               </a>
+            </li>
+            <li>
+               <a href="#">
+               Privacy
+               </a>
+            </li>
+            <li>
+               <a href="#">
+               Terms
+               </a>
+            </li>
+            <li>
+               <a href="#">
+               Contact
+               </a>
+            </li>
+         </ul>
+         <p >Copyright &copy; 2015 <b>Arrow labs security Solutions,</b> LLC. All Rights Reserved</p>
+      </div>
+      <!-- Modal Recover -->
+      <div class="modal fade" id="recoverAccount" tabindex="-1" role="dialog" aria-labelledby="recoverAccountLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <form id="recoverForm" action="index.html">
+                  <div class="modal-header">
+                     <h4 class="modal-title" id="recoverAccountLabel">Reset Password</h4>
+                  </div>
+                  <div class="modal-body">
+                     <div class="form-group">
+                        <div class="input-group input-group-in">
+                           <span class="input-group-addon"><i class="fa fa-envelope-o text-muted"></i></span>
+                           <input type="email" name="recoverEmail" id="recoverEmail" class="form-control" placeholder="Enter your email address">
+                        </div>
+                     </div>
+                     <!-- /.form-group -->
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     <button type="submit" class="btn btn-primary">Send reset link</button>
+                  </div>
+               </form>
+               <!-- /#recoverForm -->
+            </div>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+      <!-- /#recoverAccount -->
+      <!-- VENDORS : jQuery & Bootstrap -->
+      <script src="scripts/vendor.js"></script>
+      <!-- END VENDORS -->
+      <!-- DEPENDENCIES : Required plugins -->
+      <script src="scripts/dependencies.js"></script>
+      <!-- END DEPENDENCIES -->
+      <!-- PLUGIN SETUPS: vendors & dependencies setups -->
+      <script src="scripts/plugin-setups.js"></script>
+      <!-- END PLUGIN SETUPS -->
+      <!-- Google Analytics: change UA-48454066-1 to be your site's ID. -->
+      <script>
+         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+           function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+         e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+         e.src='//www.google-analytics.com/analytics.js';
+         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+         ga('create','UA-48454066-1');ga('send','pageview');
+      </script>
+   </body>
+</html>

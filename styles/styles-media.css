@@ -1,0 +1,21 @@
+@media (min-width: 768px) { .col-sm-15 { float: left; width: 20%; }
+.col-sm-16 { float: left; width: 80%; }
+.col-sm-17 { float: left; width: 40%; }
+.col-sm-18 { float: left; width: 60%; }
+}
+@media (min-width: 992px) { .col-md-15 { float: left; width: 20%; }
+.col-md-16 { float: left; width: 80%; }
+.col-md-17 { float: left; width: 40%; }
+.col-md-18 { float: left; width: 60%; }
+}
+@media (min-width: 1200px) { .col-lg-15 { float: left; width: 20%; }
+.col-lg-16 { float: left; width: 80%; }
+.col-lg-17 { float: left; width: 40%; }
+.col-lg-18 { float: left; width: 60%; }
+}
+@media (min-width: 768px) { table.dataTable.table-condensed > thead > tr > th { padding: 15px 13px; }
+.progress-bar-title { top: 5px; }
+.panel-default.panel-fill { margin-top: 40px; }
+.panel-default.panel-fill .vertical-line { display: none; }
+.col-md-15 { float: left; width: 20%; }
+}

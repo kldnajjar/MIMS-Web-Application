@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes">
+      <title>MIMS Digital Marketing</title>
+      <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+      <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="images/favicons/manifest.json">
+      <meta name="msapplication-TileColor" content="#2d89ef">
+      <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" href="styles/bootstrap.css">
+      <link rel="stylesheet" href="styles/dependencies.css">
+      <link rel="stylesheet" href="styles/wrapkit.css">
+      <link rel="stylesheet" href="styles/components.css">
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="styles/styles-media.css">
+   </head>
+   <body class="wrapkit-sidebar-left wrapkit-sidebar-vertical bg-grd-dark wrapkit-sidebar-sm main-page">
+      <main class="wrapkit-wrapper" id="wrapper">
+         <aside role="complementary" class="sidebar sidebar-dark" data-init-sidebar="true">
+            <div class="sidebar-block" style="">
+               <div class="media">
+                  <div class="media-left"><a href="page-profile.html"><img alt="photo profile" src="images/custom-images/site-logo.png" class="media-object"></a></div>
+               </div>
+            </div>
+            <div class="nav-wrapper">
+               <ul role="navigation" class="nav nav-stacked nav-left nav-tabs nav-contrast-teal">
+                  <li role="presentation" class="nav-item active"><span class="notification-box"></span><a href="index.html"><span class="nav-icon"><i class="fa fa-tachometer fa-2x"></i></span><span class="nav-text">Dashboard</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">12</span><a href="incident.html"><span class="nav-icon"><i class="fa fa-exclamation-circle fa-2x"></i></span><span class="nav-text">Incidents</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">2</span><a href="task.html"><span class="nav-icon"><i class="fa fa-stack-overflow fa-2x"></i></span><span class="nav-text">Tasks</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">2</span><a href="#"><span class="nav-icon"><i class="fa fa-file-text-o fa-2x"></i></span><span class="nav-text">Ticketing</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">2</span><a href="reports.html"><span class="nav-icon"><i class="fa fa-bar-chart fa-2x"></i></span><span class="nav-text">Reports</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">2</span><a href="messages.html"><span class="nav-icon"><i class="fa fa-comments-o fa-2x"></i></span><span class="nav-text">Messages</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">2</span><a href="verifier.html"><span class="nav-icon"><i class="fa fa-shield fa-2x"></i></span><span class="nav-text">Verifier</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">2</span><a href="#"><span class="nav-icon"><i class="fa fa-mobile fa-2x"></i></span><span class="nav-text">Devices</span></a></li>
+                  <li role="presentation" class="nav-item"><span class="notification-box">2</span><a href="users.html"><span class="nav-icon"><i class="fa fa-users fa-2x"></i></span><span class="nav-text">Users</span></a></li>
+               </ul>
+               <div class="nav-ctrl btn-group hide"><a class="btn hover-teal btn-icon btn-xs"><span class="icon-arrow-left"></span></a><a class="btn hover-teal btn-icon btn-xs"><span class="icon-arrow-right"></span></a></div>
+               <div class="nav-fake-padding bg-dark hide"></div>
+            </div>
+            <div class="sidebar-resize-handler"></div>
+         </aside>
+         <section class="content-wrapper" role="main">
+            <div class="content">
+               <div class="content-body">
+                  <div class="panel fade in panel-default panel-main-page" data-init-panel="true">
+                     <div class="panel-heading">
+                        <div class="row">
+                           <div class="col-md-2 col-sm-3">
+                              <h3 class="panel-title"><span class="hidden-xs">Dashboards</span></h3>
+                           </div>
+                           <div class="col-md-8 col-sm-7">
+                              <div class="panel-control">
+                                 <ul id="demo3-tabs" class="nav nav-tabs nav-main">
+                                    <li class="active"><a data-toggle="tab" href="#home-tab">Home</a></li>
+                                    <li><a data-toggle="tab" href="#profile-tab">Profile</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-md-2 col-sm-2">
+                              <div role="group" class="pull-right"><a class="btn btn-nofill btn-sm btn-default btn-settings" aria-label="Settings" title="Settings" data-target="#Settings" data-scripts="_includes/setups.js" href="#" data-toggle="modal">Username <span class="icon-settings fa-lg"></span></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <div class="tab-pane fade active in" id="home-tab">
+                           <div class="tab-content">
+                              <div class="row mb-4x">
+                                 <div class="col-md-9">
+                                    <div class="row mb-4x">
+                                       <div class="col-md-12">
+                                          <h5>Alarms in Dubai Center right now</h5>
+                                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462568.4775979113!2d54.949646795754845!3d25.074216998414396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai+-+United+Arab+Emirates!5e0!3m2!1sen!2sjo!4v1449699088208" width="100%" height="362" frameborder="0" style="box-shadow:0 1px 3px -1px rgba(22, 24, 27, 0.26);" allowfullscreen></iframe>
+                                       </div>
+                                    </div>
+                                    <div class="row horizontal-chart">
+                                       <div class="col-md-15 text-center panel-seperator panel-heading">
+                                          <h3 class="panel-title capitalize-text">STATUS</h3>
+                                       </div>
+                                       <div class="col-md-15 panel-seperator">
+                                          <div class="help-block">
+                                             <p class="capitalize-text">PENDING</p>
+                                          </div>
+                                          <div class="inline-block">
+                                             <div class="easyPieChart" data-percent="65" data-size="45" data-line-width="3" data-line-cap="square" data-scale-color="false" data-track-color="#F5F7FA" data-bar-color="#f44e4b"><span class="percentage text-dark fa fa-1x"><span class="data-percent">65</span>%
+                                                </span>
+                                             </div>
+                                          </div>
+                                          <div class="inline-block ">
+                                             <h3>25</h3>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-15 panel-seperator">
+                                          <div class="help-block">
+                                             <p class="capitalize-text">IN PROGRESS</p>
+                                          </div>
+                                          <div class="inline-block">
+                                             <div class="easyPieChart" data-percent="32" data-size="45" data-line-width="3" data-line-cap="square" data-scale-color="false" data-track-color="#F5F7FA" data-bar-color="#f2c400"><span class="percentage text-dark fa fa-1x"><span class="data-percent">32</span>%
+                                                </span>
+                                             </div>
+                                          </div>
+                                          <div class="inline-block">
+                                             <h3>25</h3>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-15 panel-seperator">
+                                          <div class="help-block">
+                                             <p class="capitalize-text">COMPLETED</p>
+                                          </div>
+                                          <div class="inline-block">
+                                             <div class="easyPieChart" data-percent="17" data-size="45" data-line-width="3" data-line-cap="square" data-scale-color="false" data-track-color="#F5F7FA" data-bar-color="#3ebb64"><span class="percentage text-dark fa fa-1x"><span class="data-percent">17</span>%
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-15 chart-total">
+                                          <p><span class="capitalize-text">100 </span>TOTAL ALARMS</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div data-context="success" class="panel fade in panel-transparent" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <h3 class="panel-title capitalize-text">HIGHLIGHTS FOR TODAY</h3>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div class="help-block mb-4x">
+                                             <time>
+                                             8:00 am, December 7, 2015 
+                                             </time>
+                                             <p>
+                                                Send new updates to Rami
+                                             </p>
+                                             <div class="vertical-line green-border"></div>
+                                          </div>
+                                          <div class="help-block mb-4x">
+                                             <time>
+                                             8:00 am, December 7, 2015 
+                                             </time>
+                                             <p>
+                                                Send new updates to Rami
+                                             </p>
+                                             <div class="vertical-line red-border"></div>
+                                          </div>
+                                          <div class="help-block mb-4x">
+                                             <time>
+                                             8:00 am, December 7, 2015 
+                                             </time>
+                                             <p>
+                                                Send new updates to Rami
+                                             </p>
+                                             <div class="vertical-line blue-border"></div>
+                                          </div>
+                                          <div class="help-block mb-4x">
+                                             <time>
+                                             8:00 am, December 7, 2015 
+                                             </time>
+                                             <p>
+                                                Send new updates to Rami
+                                             </p>
+                                             <div class="vertical-line yellow-border"></div>
+                                          </div>
+                                          <div class="help-block mb-4x">
+                                             <time>
+                                             8:00 am, December 7, 2015 
+                                             </time>
+                                             <p>
+                                                Send new updates to Rami
+                                             </p>
+                                             <div class="vertical-line red-border"></div>
+                                          </div>
+                                          <div class="help-block mb-4x">
+                                             <time>
+                                             8:00 am, December 7, 2015 
+                                             </time>
+                                             <p>
+                                                Send new updates to Rami
+                                             </p>
+                                             <div class="vertical-line red-border"></div>
+                                          </div>
+                                          <div class="help-block text-center mt-8x mb-3x"><a class="capitalize-text button-inactive" data-toggle="modal" data-target="#newReminder" href="#">+ NEW REMINDER</a></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row mb-4x">
+                                 <div class="col-md-15">
+                                    <div data-context="success" class="panel fade in panel-MIMS" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <h3 class="panel-title capitalize-text">ACTIVITY REPORT</h3>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div class="help-block text-center">
+                                             <canvas id="chartjs-bar4" width="200" height="250" style="width: 200; height: 250px;"></canvas>
+                                          </div>
+                                          <div class="help-block chart-map-block">
+                                             <div class="inline-block">
+                                                <p><span class="chart-map chart-color-light-red"></span><small>Mobile Hot Event</small></p>
+                                             </div>
+                                             <div class="inline-block">
+                                                <p><span class="chart-map chart-color-blue"></span><small>Hot Event</small></p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-15">
+                                    <div data-context="success" class="panel fade in panel-MIMS" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <h3 class="panel-title capitalize-text">EVENT STATUS</h3>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div class="help-block text-center">
+                                             <canvas id="chartjs-doughnut" height="250" width="200" style="width: 200px; height: 250px;"></canvas>
+                                          </div>
+                                          <div class="help-block text-center circle-chart-title">
+                                             <p><b>100</b><br /><b>Events</b></p>
+                                          </div>
+                                          <div class="help-block chart-map-block">
+                                             <div class="inline-block">
+                                                <p><span class="chart-map chart-color-green"></span><small>Handled 75</small></p>
+                                             </div>
+                                             <div class="inline-block">
+                                                <p><span class="chart-map chart-color-yellow"></span><small>Pending 25</small></p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-15">
+                                    <div data-context="success" class="panel fade in panel-MIMS" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <h3 class="panel-title capitalize-text">TOP HOT EVENT USERS</h3>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div class="help-block">
+                                             <div class="help-block">
+                                                <span class="pull-right">100</span><span>User #1</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-blue" style="width:85%"></div>
+                                                </div>
+                                             </div>
+                                             <div class="help-block">
+                                                <span class="pull-right">75</span><span>User #2</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-green" style="width:52%"></div>
+                                                </div>
+                                             </div>
+                                             <div class="help-block">
+                                                <span class="pull-right">125</span><span>User #3</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-yellow" style="width:64%"></div>
+                                                </div>
+                                             </div>
+                                             <div class="help-block">
+                                                <span class="pull-right">125</span><span>User #4</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-light-red" style="width:42%"></div>
+                                                </div>
+                                             </div>
+                                             <div class="help-block">
+                                                <span class="pull-right">125</span><span>User #5</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-dark-red" style="width:42%"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-15">
+                                    <div data-context="success" class="panel fade in panel-MIMS" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <h3 class="panel-title capitalize-text">TOP OFFENCE USERS</h3>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div class="help-block text-center">
+                                             <canvas id="chartjs-line" width="200" height="249" style="width: 200px; height: 249px;"></canvas>
+                                          </div>
+                                          <div class="help-block chart-map-block">
+                                             <div class="inline-block">
+                                                <p><span class="chart-map chart-color-blue"></span><small>User#1</small></p>
+                                             </div>
+                                             <div class="inline-block">
+                                                <p><span class="chart-map chart-color-yellow"></span><small>User#2</small></p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-15">
+                                    <div data-context="success" class="panel fade in panel-MIMS" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <h3 class="panel-title capitalize-text">ONLINE USERS</h3>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div class="help-block chart-extra-margin">
+                                             <div class="help-block">
+                                                <span class="pull-right">100</span><span>Online</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-green" style="width:85%"></div>
+                                                </div>
+                                             </div>
+                                             <div class="help-block">
+                                                <span class="pull-right">75</span><span>Offline</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-light-red" style="width:52%"></div>
+                                                </div>
+                                             </div>
+                                             <div class="help-block">
+                                                <span class="pull-right">125</span><span>Idle</span>
+                                                <div class="progress progress-sm">
+                                                   <div class="progress-bar progress-bar-primary chart-color-yellow" style="width:64%"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row mb-4x">
+                                 <div class="col-md-16">
+                                    <div data-fill-color="true" class="panel fade in panel-default panel-table panel-datatable" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <div class="row no-gutter">
+                                             <div class="col-md-8">
+                                                <h3 class="panel-title capitalize-text">MOBILE HOT EVENTS</h3>
+                                                <div class="row">
+                                                   <div class="col-md-4">
+                                                      <div class="progress">
+                                                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-md-8">
+                                                      <p class="white-color progress-bar-title">73% Handled</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-4 mt-2x">
+                                                <input type="search" class="form-control white-color mt-1x datatable-search" placeholder="Search"><i class="fa fa-search fa-1x white-color"></i>
+                                                <div class="clearfx"></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div class="table-responsive">
+                                             <table class="table table-condensed table-noborder table-striped bordered-top datatable-table" role="grid">
+                                                <thead>
+                                                   <tr role="row">
+                                                      <th class="sorting_asc" tabindex="0" rowspan="1" colspan="1" aria-label="PRIORITY" aria-sort="ascending">PRIORITY
+                                                      </th>
+                                                      <th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="STATUS">STATUS<i class="fa fa-sort ml-2x"></i></th>
+                                                      <th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="NAME">NAME<i class="fa fa-sort ml-2x"></i></th>
+                                                      <th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="TIME">TIME<i class="fa fa-sort ml-2x"></i></th>
+                                                      <th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="USER">USER<i class="fa fa-sort ml-2x"></i></th>
+                                                      <th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="ACTION">ACTION
+                                                      </th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody>
+                                                   <tr role="row" class="odd clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-orange"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Firefox 1.0</td>
+                                                      <td>Win 98+ / OSX.2+</td>
+                                                      <td>1.7</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="even clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-green"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Firefox 1.5</td>
+                                                      <td>Win 98+ / OSX.2+</td>
+                                                      <td>1.8</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="odd clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-red"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Firefox 2.0</td>
+                                                      <td>Win 98+ / OSX.2+</td>
+                                                      <td>1.8</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="even clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-yellow"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Firefox 3.0</td>
+                                                      <td>Win 2k+ / OSX.3+</td>
+                                                      <td>1.9</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="odd clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-yellow"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Camino 1.0</td>
+                                                      <td>OSX.2+</td>
+                                                      <td>1.8</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="even clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-green"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Camino 1.5</td>
+                                                      <td>OSX.3+</td>
+                                                      <td>1.8</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="odd clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-red"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Netscape 7.2</td>
+                                                      <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                                      <td>1.7</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="even clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-orange"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Netscape Browser 8</td>
+                                                      <td>Win 98SE+</td>
+                                                      <td>1.7</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="odd clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-orange"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Netscape Navigator 9</td>
+                                                      <td>Win 98+ / OSX.2+</td>
+                                                      <td>1.8</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                   <tr role="row" class="even clickable-row clickable-row-links"  data-href='http://google.com'>
+                                                      <td><span class="circle-point-container"><span class="circle-point circle-point-orange"></span></span></td>
+                                                      <td class="sorting_1">Gecko</td>
+                                                      <td>Mozilla 1.0</td>
+                                                      <td>Win 95+ / OSX.1+</td>
+                                                      <td>1</td>
+                                                      <td><a href="#"><i class="fa fa-eye mr-1x"></i>View</a></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <div class="clearfix"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-15">
+                                    <div data-fill-color="true" class="panel fade in panel-default panel-fill" data-init-panel="true">
+                                       <div class="panel-heading">
+                                          <h3 class="panel-title">RECENT ACTIVITY</h3>
+                                       </div>
+                                       <div class="panel-body">
+                                          <div data-allow-page-scroll="true" data-color="#CCD1D9" data-toggle="slimScroll" style="height:678px">
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i><span class="vertical-line"></span></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i><span class="vertical-line"></span></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i><span class="vertical-line"></span></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i><span class="vertical-line"></span></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i><span class="vertical-line"></span></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                   <p>3M</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-1"><span class="bullhorn-circle"><i class="fa fa-bullhorn"></i><span class="vertical-line"></span></span></div>
+                                                <div class="col-md-8 col-sm-10">
+                                                   <p><span>Username</span> submitted a<span>Hot Event Alarm </span>at Al Rebat St, Dubai.</p>
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                             </div>
+                                          </div>
+                                          <div class="slimScrollBar" style="background: rgb(204, 209, 217) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 273.07px;"></div>
+                                          <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab">
+                           <i class="fa fa-map-marker fa-3x red-color"></i>
+                           <div class="map-container inline-block">
+                              <div class="map-popup">
+                                 <div class="help-block text-center pt-2x">
+                                    <i class="fa fa-mobile"></i>
+                                    <p class="inline-block red-color">
+                                       username
+                                    </p>
+                                 </div>
+                                 <div class="help-block text-center"><a href="#" class="orange-borders light-button orange-color"><i class="fa fa-minus orange-color"></i>
+                                    REMOVE
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="map-selector"></div>
+                           </div>
+                           <div class="map-container inline-block">
+                              <div class="map-popup">
+                                 <div class="help-block text-center pt-2x">
+                                    <i class="fa fa-mobile"></i>
+                                    <p class="inline-block red-color">
+                                       username
+                                    </p>
+                                 </div>
+                                 <div class="help-block text-center"><a href="#" class="green-borders light-button green-color"><i class="fa fa-check green-color"></i>
+                                    ADDED
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="map-selector"></div>
+                           </div>
+                           <div class="map-container inline-block">
+                              <div class="map-popup">
+                                 <div class="help-block text-center pt-2x">
+                                    <i class="fa fa-mobile"></i>
+                                    <p class="inline-block red-color">
+                                       username
+                                    </p>
+                                 </div>
+                                 <div class="help-block text-center"><a href="#" class="red-borders light-button red-color"><i class="fa fa-plus red-color"></i>
+                                    ADD
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="map-selector"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <script src="scripts/vendor.js"></script><script src="scripts/dependencies.js"></script><script src="scripts/wrapkit.js"></script><script src="scripts/wrapkit-setup.js"></script><script src="scripts/plugin-setups.js"></script><script src="scripts/morris.bundle.js"></script><script src="scripts/chartjs.js"></script><script src="scripts/jquery.easypiechart.js"></script><script src="scripts/dataTables.bootstrap.js"></script><script src="scripts/dataTables.tableTools.js"></script><script src="scripts/jquery.validate.js"></script><script src="scripts/demo/chartjs-demo.js"></script><script src="scripts/demo/chart-inline-demo.js"></script><script src="scripts/demo/progressbar-demo.js"></script><script src="scripts/demo/chart-morris-demo.js"></script><script>
+         (function(b, o, i, l, e, r) {
+             b.GoogleAnalyticsObject = l;
+             b[l] || (b[l] =
+                 function() {
+                     (b[l].q = b[l].q || []).push(arguments)
+                 });
+             b[l].l = +new Date;
+             e = o.createElement(i);
+             r = o.getElementsByTagName(i)[0];
+             e.src = '//www.google-analytics.com/analytics.js';
+             r.parentNode.insertBefore(e, r)
+         }(window, document, 'script', 'ga'));
+         ga('create', 'UA-48454066-1');
+         ga('send', 'pageview');
+         
+      </script><script src="scripts/script.js"></script><script>
+         loadingDocument();
+      </script>
+   </body>
+</html>
